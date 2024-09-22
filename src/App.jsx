@@ -36,7 +36,9 @@ function App() {
         setFlipped([...flipped(), currentFlipOne(), currentFlipTwo()]);
       }
       setCurrentFlipOne(null);
-      setCurrentFlipTwo(null);
+      setTimeout(() => {
+        setCurrentFlipTwo(null);
+      }, 1000);
     }
   });
 
